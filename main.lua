@@ -1,13 +1,11 @@
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/Jxereas/UI-Libraries/main/cerberus.lua"))()
 
-local window = Library.new("Window") -- Args(<string> Name, <boolean?> ConstrainToScreen)
+local window = Library.new("lightning HUB") -- Args(<string> Name, <boolean?> ConstrainToScreen)
 
 window:LockScreenBoundaries(true) -- Args(<boolean> ConstrainToScreen)
 
-local tab = window:Tab("lightning HUB") -- Args(<string> Name, <string?> TabImage)
+local tab = window:Tab("Credits") -- Args(<string> Name, <string?> TabImage)
 
-local section = tab:Section("lightning HUB") -- Args(<string> Name)
+local section = tab:Section("Developers") -- Args(<string> Name)
 
-local title = section:Title("lightning HUB") -- Args(<string> Name)
-title:ChangeText("lightning HUB") -- Args(<String> NewText)
-
+local label = section:Label("lightningspeed - owner/solo dev") -- Args(<String> LabelText, <Number?> TextSize, <Color3?> TextColor)
